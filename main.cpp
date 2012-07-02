@@ -1088,6 +1088,31 @@ void markajalan(void) {
 }
 
 
+void awan(void){
+glPushMatrix(); 
+glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+glColor3ub(153, 223, 255);
+glutSolidSphere(10, 50, 50);
+glPopMatrix();
+glPushMatrix();
+glTranslatef(10,0,1);
+glutSolidSphere(5, 50, 50);
+glPopMatrix();   
+glPushMatrix();
+glTranslatef(-2,6,-2);
+glutSolidSphere(7, 50, 50);
+glPopMatrix();   
+glPushMatrix();
+glTranslatef(-10,-3,0);
+glutSolidSphere(7, 50, 50);
+glPopMatrix();  
+glPushMatrix();
+glTranslatef(6,-2,2);
+glutSolidSphere(7, 50, 50);
+glPopMatrix();      
+}     
+        
+
 
 
 void display(void){
@@ -1534,7 +1559,109 @@ glScalef(3, 3, 3);
 markajalan();
 glPopMatrix();
 
+//awan
+glPushMatrix();
+glTranslatef(-75, 110, -120);
+glScalef(1.8, 1.0, 1.0);  
+awan();
+glPopMatrix();
 
+glPushMatrix();
+glTranslatef(-45, 110, -115);
+glScalef(1.8, 1.0, 1.0);  
+awan();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(-50, 120, -120);
+glScalef(1.8, 1.0, 1.0);  
+awan();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(-140, 90, -120);
+glScalef(1.8, 1.0, 1.0);  
+awan();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(-155, 90, -115);
+glScalef(1.8, 1.0, 1.0);  
+awan();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(-130, 110, -120);
+glScalef(1.8, 1.0, 1.0);  
+awan();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(-190, 110, -120);
+glScalef(1.8, 1.0, 1.0);  
+awan();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(-175, 120, -115);
+glScalef(1.8, 1.0, 1.0);  
+awan();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(-200, 100, -120);
+glScalef(1.8, 1.0, 1.0);  
+awan();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(-30, 110, -120);
+glScalef(1.8, 1.0, 1.0);  
+awan();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(-35, 95, -115);
+glScalef(1.8, 1.0, 1.0);  
+awan();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(-20, 90, -120);
+glScalef(1.8, 1.0, 1.0);  
+awan();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(-80, 90, -120);
+glScalef(1.8, 1.0, 1.0);  
+awan();
+glPopMatrix();
+  
+glPushMatrix();
+glTranslatef(220, 90, -120);
+glScalef(1.8, 1.0, 1.0);  
+awan();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(180, 90, -120);
+glScalef(1.8, 1.0, 1.0);  
+awan();
+glPopMatrix();
+
+
+glPushMatrix();
+glTranslatef(190, 110, -120);
+glScalef(1.8, 1.0, 1.0);  
+awan();
+glPopMatrix();
+
+glPushMatrix();
+glTranslatef(125, 110, -115);
+glScalef(1.8, 1.0, 1.0);  
+awan();
+glPopMatrix();
 
 
     glColorMask(GL_FALSE, GL_FALSE, GL_FALSE, GL_FALSE); //disable the color mask
