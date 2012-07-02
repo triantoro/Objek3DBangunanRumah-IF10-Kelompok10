@@ -895,6 +895,56 @@ void rumah(void) {
     glColor3ub(252, 243, 169);
     glutSolidSphere(2.0,20,50);
     glPopMatrix();        
+  
+
+
+    //lampu kanan atas
+    glPushMatrix();
+    glScaled(0.05, 0.05, 0.05);
+    glTranslatef(34.5, 47, 96);
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE); //untuk memunculkan warna
+    glColor3ub(252, 243, 169);
+    glutSolidSphere(2.0,20,50);
+    glPopMatrix();       
+      
+    //lampu kiri atas
+    glPushMatrix();
+    glScaled(0.05, 0.05, 0.05);
+    glTranslatef(-32.5, 47, 96);
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3ub(252, 243, 169);
+    glutSolidSphere(2.0,20,50);
+    glPopMatrix(); 
+    
+    //pagar bawah
+    glPushMatrix();
+    glScaled(.7, 0.017, 0.017);
+   glTranslatef(1, 50,400); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+     glColor3f(1,1,1);
+    glutSolidCube(5.0);
+    glPopMatrix(); 
+    
+    //pagar bawah
+    glPushMatrix();
+    glScaled(.7, 0.017, 0.017);
+   glTranslatef(1, 40,400); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+     glColor3f(1,1,1);
+    glutSolidCube(5.0);
+    glPopMatrix(); 
+    
+    //pagar bawah
+    glPushMatrix();
+    glScaled(.7, 0.017, 0.017);
+   glTranslatef(1, 30,400); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+     glColor3f(1,1,1);
+    glutSolidCube(5.0);
+    glPopMatrix(); 
+    
+   
+        
      
 }
 
