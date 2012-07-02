@@ -943,7 +943,50 @@ void rumah(void) {
     glutSolidCube(5.0);
     glPopMatrix(); 
     
-   
+    //pagar bawah
+    glPushMatrix();
+    glScaled(.7, 0.017, 0.017);
+   glTranslatef(1, 20,400); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+     glColor3f(1,1,1);
+    glutSolidCube(5.0);
+    glPopMatrix(); 
+        
+   //pagar bawah
+    glPushMatrix();
+    glScaled(.7, 0.017, 0.017);
+   glTranslatef(1, 10,400); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+     glColor3f(1,1,1);
+    glutSolidCube(5.0);
+    glPopMatrix(); 
+            
+    // Batang Tiang Kanan
+    glPushMatrix();
+    glScaled(0.06, 0.2,0.06);
+   glTranslatef(43, 3,115.5); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+     glColor3f(1.0000, 0.5252, 0.0157);
+    glutSolidCube(5.0);
+    glPopMatrix();    
+    
+    // Batang Tiang Kiri 1
+    glPushMatrix();
+    glScaled(0.06, 0.2,0.06);
+   glTranslatef(-42, 3,115.5); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+     glColor3f(1.0000, 0.5252, 0.0157);
+    glutSolidCube(5.0);
+    glPopMatrix();    
+    
+    // Batang Tiang Kiri 2
+    glPushMatrix();
+    glScaled(0.06, 0.2,0.06);
+   glTranslatef(-20, 3,115.5); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+     glColor3f(1.0000, 0.5252, 0.0157);
+    glutSolidCube(5.0);
+    glPopMatrix();      
         
      
 }
