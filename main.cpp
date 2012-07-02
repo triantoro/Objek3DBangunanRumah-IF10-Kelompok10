@@ -1074,7 +1074,18 @@ void kursi(void){
    
 }
 
+void markajalan(void) {
 
+    // marka jalan
+    glPushMatrix();
+    glScaled(1, 0.05,0.3);
+   glTranslatef(2.4,2.5,67); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+     glColor3f(1,1,1);
+    glutSolidCube(5.0);
+    glPopMatrix(); 
+    
+}
 
 
 
@@ -1419,7 +1430,109 @@ kursi();
 glPopMatrix();
 
 
+//markajalan
+glPushMatrix();
+glTranslatef(270,1,8); 
+glScalef(3, 3, 3);
+//glBindTexture(GL_TEXTURE_2D, texture[0]);
+markajalan();
+glPopMatrix();
 
+//markajalan
+glPushMatrix();
+glTranslatef(240,1,8); 
+glScalef(3, 3, 3);
+//glBindTexture(GL_TEXTURE_2D, texture[0]);
+markajalan();
+glPopMatrix();
+
+//markajalan
+glPushMatrix();
+glTranslatef(210,1,8); 
+glScalef(3, 3, 3);
+//glBindTexture(GL_TEXTURE_2D, texture[0]);
+markajalan();
+glPopMatrix();
+
+//markajalan
+glPushMatrix();
+glTranslatef(180,1,8); 
+glScalef(3, 3, 3);
+//glBindTexture(GL_TEXTURE_2D, texture[0]);
+markajalan();
+glPopMatrix();
+
+//markajalan
+glPushMatrix();
+glTranslatef(150,1,8); 
+glScalef(3, 3, 3);
+//glBindTexture(GL_TEXTURE_2D, texture[0]);
+markajalan();
+glPopMatrix();
+
+//markajalan
+glPushMatrix();
+glTranslatef(120,1,8); 
+glScalef(3, 3, 3);
+//glBindTexture(GL_TEXTURE_2D, texture[0]);
+markajalan();
+glPopMatrix();
+
+//markajalan
+glPushMatrix();
+glTranslatef(0,1,8); 
+glScalef(3, 3, 3);
+//glBindTexture(GL_TEXTURE_2D, texture[0]);
+markajalan();
+glPopMatrix();
+
+//markajalan
+glPushMatrix();
+glTranslatef(30,1,8); 
+glScalef(3, 3, 3);
+//glBindTexture(GL_TEXTURE_2D, texture[0]);
+markajalan();
+glPopMatrix();
+
+//markajalan
+glPushMatrix();
+glTranslatef(-30,1,8); 
+glScalef(3, 3, 3);
+//glBindTexture(GL_TEXTURE_2D, texture[0]);
+markajalan();
+glPopMatrix();
+
+//markajalan
+glPushMatrix();
+glTranslatef(-60,1,8); 
+glScalef(3, 3, 3);
+//glBindTexture(GL_TEXTURE_2D, texture[0]);
+markajalan();
+glPopMatrix();
+
+//markajalan
+glPushMatrix();
+glTranslatef(-90,1,8); 
+glScalef(3, 3, 3);
+//glBindTexture(GL_TEXTURE_2D, texture[0]);
+markajalan();
+glPopMatrix();
+
+//markajalan
+glPushMatrix();
+glTranslatef(-120,1,8); 
+glScalef(3, 3, 3);
+//glBindTexture(GL_TEXTURE_2D, texture[0]);
+markajalan();
+glPopMatrix();
+
+//markajalan
+glPushMatrix();
+glTranslatef(-150,1,8); 
+glScalef(3, 3, 3);
+//glBindTexture(GL_TEXTURE_2D, texture[0]);
+markajalan();
+glPopMatrix();
 
 
 
