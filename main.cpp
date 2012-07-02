@@ -1074,6 +1074,55 @@ glScalef(5, 5, 5);
 rumah();
 glPopMatrix();
 
+//rumah 1
+glPushMatrix();
+glTranslatef(-35,5,-10); 
+glScalef(5, 5, 5);
+//glBindTexture(GL_TEXTURE_2D, texture[0]);
+rumah();
+glPopMatrix();
+
+//rumah 1
+glPushMatrix();
+glTranslatef(-70,5,-10); 
+glScalef(5, 5, 5);
+//glBindTexture(GL_TEXTURE_2D, texture[0]);
+rumah();
+glPopMatrix();
+
+//rumah 1
+glPushMatrix();
+glTranslatef(-105,5,-10); 
+glScalef(5, 5, 5);
+//glBindTexture(GL_TEXTURE_2D, texture[0]);
+rumah();
+glPopMatrix();
+
+//rumah 1
+glPushMatrix();
+glTranslatef(-140,5,-10); 
+glScalef(5, 5, 5);
+//glBindTexture(GL_TEXTURE_2D, texture[0]);
+rumah();
+glPopMatrix();
+
+//rumah 1
+glPushMatrix();
+glTranslatef(-175,5,-10); 
+glScalef(5, 5, 5);
+//glBindTexture(GL_TEXTURE_2D, texture[0]);
+rumah();
+glPopMatrix();
+
+//rumah 1
+glPushMatrix();
+glTranslatef(-210,5,-10); 
+glScalef(5, 5, 5);
+//glBindTexture(GL_TEXTURE_2D, texture[0]);
+rumah();
+glPopMatrix();
+
+
 
 
 //pohon2
