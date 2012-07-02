@@ -991,6 +991,41 @@ void rumah(void) {
      
 }
 
+void pohon(void){
+//batang
+GLUquadricObj *pObj;
+pObj =gluNewQuadric();
+gluQuadricNormals(pObj, GLU_SMOOTH);    
+
+glPushMatrix();
+glColor3ub(104,70,14);
+glRotatef(270,1,0,0);
+gluCylinder(pObj, 4, 0.7, 30, 25, 25);
+glPopMatrix();
+}
+
+//ranting  
+void ranting(void){
+GLUquadricObj *pObj;
+pObj =gluNewQuadric();
+gluQuadricNormals(pObj, GLU_SMOOTH); 
+glPushMatrix();
+glColor3ub(104,70,14);
+glTranslatef(0,27,0);
+glRotatef(330,1,0,0);
+gluCylinder(pObj, 0.6, 0.1, 15, 25, 25);
+glPopMatrix();
+
+//daun
+glPushMatrix();
+glColor3ub(18,118,13);
+glScaled(5, 5, 5);
+glTranslatef(0,7,3);
+glutSolidDodecahedron();
+glPopMatrix();
+}
+
+
 void display(void){
 //    glutSwapBuffers();
 	glClearStencil(0); //clear the stencil buffer
@@ -1038,6 +1073,210 @@ glScalef(5, 5, 5);
 //glBindTexture(GL_TEXTURE_2D, texture[0]);
 rumah();
 glPopMatrix();
+
+
+
+//pohon2
+glPushMatrix();
+glTranslatef(35,0.5,-10);    
+glScalef(0.5, 0.5, 0.5);
+glRotatef(90,0,1,0);
+pohon();
+
+//ranting1
+ranting();
+
+//ranting2
+glPushMatrix();
+glScalef(1.5, 1.5, 1.5);
+glTranslatef(0,25,25);   
+glRotatef(250,1,0,0);
+ranting();
+glPopMatrix();
+
+//ranting3
+glPushMatrix();
+glScalef(1.8, 1.8, 1.8);
+glTranslatef(0,-6,21.5);   
+glRotatef(-55,1,0,0);
+ranting();
+glPopMatrix();
+
+glPopMatrix();
+
+//pohon3
+glPushMatrix();
+glTranslatef(55,0.2,-40);    
+glScalef(0.7, 0.8, 0.8);
+glRotatef(90,0,1,0);
+pohon();
+
+//ranting1
+ranting();
+
+//ranting2
+glPushMatrix();
+glScalef(1.5, 1.5, 1.5);
+glTranslatef(0,25,25);   
+glRotatef(250,1,0,0);
+ranting();
+glPopMatrix();
+
+//ranting3
+glPushMatrix();
+glScalef(1.8, 1.8, 1.8);
+glTranslatef(0,-6,21.5);   
+glRotatef(-55,1,0,0);
+ranting();
+glPopMatrix();
+
+glPopMatrix();
+
+//pohon4
+glPushMatrix();
+glTranslatef(145,0.2,-17);    
+glScalef(0.7, 0.8, 0.8);
+glRotatef(90,0,1,0);
+pohon();
+
+//ranting1 4
+ranting();
+
+//ranting2 4
+glPushMatrix();
+glScalef(1.5, 1.5, 1.5);
+glTranslatef(0,25,25);   
+glRotatef(250,1,0,0);
+ranting();
+glPopMatrix();
+
+//ranting3 4
+glPushMatrix();
+glScalef(1.8, 1.8, 1.8);
+glTranslatef(0,-6,21.5);   
+glRotatef(-55,1,0,0);
+ranting();
+glPopMatrix();
+
+glPopMatrix();
+
+//pohon5
+glPushMatrix();
+glTranslatef(115,0.5,-60);    
+glScalef(0.5, 0.5, 0.5);
+glRotatef(90,0,1,0);
+pohon();
+
+//ranting1 5
+ranting();
+
+//ranting2 5
+glPushMatrix();
+glScalef(1.5, 1.5, 1.5);
+glTranslatef(0,25,25);   
+glRotatef(250,1,0,0);
+ranting();
+glPopMatrix();
+
+//ranting3 5
+glPushMatrix();
+glScalef(1.8, 1.8, 1.8);
+glTranslatef(0,-6,21.5);   
+glRotatef(-55,1,0,0);
+ranting();
+glPopMatrix();
+
+glPopMatrix();
+
+//pohon6
+glPushMatrix();
+glTranslatef(35,0.5,100);    
+glScalef(0.5, 0.5, 0.5);
+glRotatef(90,0,1,0);
+pohon();
+
+//ranting1 6
+ranting();
+
+//ranting2 6
+glPushMatrix();
+glScalef(1.5, 1.5, 1.5);
+glTranslatef(0,25,25);   
+glRotatef(250,1,0,0);
+ranting();
+glPopMatrix();
+
+//ranting3 6
+glPushMatrix();
+glScalef(1.8, 1.8, 1.8);
+glTranslatef(0,-6,21.5);   
+glRotatef(-55,1,0,0);
+ranting();
+glPopMatrix();
+
+glPopMatrix();
+
+//pohon7
+glPushMatrix();
+glTranslatef(-15,0.5,100);    
+glScalef(0.5, 0.5, 0.5);
+glRotatef(90,0,1,0);
+pohon();
+
+//ranting1 7
+ranting();
+
+//ranting2 7
+glPushMatrix();
+glScalef(1.5, 1.5, 1.5);
+glTranslatef(0,25,25);   
+glRotatef(250,1,0,0);
+ranting();
+glPopMatrix();
+
+//ranting3 7
+glPushMatrix();
+glScalef(1.8, 1.8, 1.8);
+glTranslatef(0,-6,21.5);   
+glRotatef(-55,1,0,0);
+ranting();
+glPopMatrix();
+
+glPopMatrix();
+
+//pohon8
+glPushMatrix();
+glTranslatef(-65,0.5,100);    
+glScalef(0.5, 0.5, 0.5);
+glRotatef(90,0,1,0);
+pohon();
+
+//ranting1 8
+ranting();
+
+//ranting2 8
+glPushMatrix();
+glScalef(1.5, 1.5, 1.5);
+glTranslatef(0,25,25);   
+glRotatef(250,1,0,0);
+ranting();
+glPopMatrix();
+
+//ranting3 8
+glPushMatrix();
+glScalef(1.8, 1.8, 1.8);
+glTranslatef(0,-6,21.5);   
+glRotatef(-55,1,0,0);
+ranting();
+glPopMatrix();
+
+glPopMatrix();
+
+
+
+
+
+
 
 
 
