@@ -1025,6 +1025,59 @@ glutSolidDodecahedron();
 glPopMatrix();
 }
 
+void kursi(void){
+    // Batang Tiang Kanan
+    glPushMatrix();
+    glScaled(0.06, 0.2,0.06);
+   glTranslatef(43, 0,380.5); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1,1,1); 
+    glutSolidCube(5.0);
+    glPopMatrix(); 
+    
+    
+    // Batang Tiang Kiri
+    glPushMatrix();
+    glScaled(0.06, 0.2,0.06);
+   glTranslatef(3, 0,380.5); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1,1,1); 
+    glutSolidCube(5.0);
+    glPopMatrix(); 
+    
+    // Batang depan knan
+    glPushMatrix();
+    glScaled(0.06, 0.2,0.06);
+   glTranslatef(43, 0,390.5); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1,1,1);
+    glutSolidCube(5.0);
+    glPopMatrix(); 
+    
+    // Batang Depan Kiri
+    glPushMatrix();
+    glScaled(0.06, 0.2,0.06);
+   glTranslatef(3, 0,390.5); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(1,1,1); 
+    glutSolidCube(5.0);
+    glPopMatrix();     
+
+    // atas kursi
+    glPushMatrix();
+    glScaled(0.6, 0.05,0.3);
+   glTranslatef(2.4,8,77); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+     glColor3f(1.0000, 0.5252, 0.0157);
+    glutSolidCube(5.0);
+    glPopMatrix();  
+   
+}
+
+
+
+
+
 
 void display(void){
 //    glutSwapBuffers();
@@ -1322,6 +1375,48 @@ glPopMatrix();
 glPopMatrix();
 
 
+
+//kursi nyamping
+glPushMatrix();
+glTranslatef(8,5,-15); 
+glScalef(5, 5, 5);
+    glRotated(90, 0, 1, 0);
+//glBindTexture(GL_TEXTURE_2D, texture[0]);
+kursi();
+glPopMatrix();
+
+//kursi1
+glPushMatrix();
+glTranslatef(0,5,-15); 
+glScalef(5, 5, 5);
+//glBindTexture(GL_TEXTURE_2D, texture[0]);
+kursi();
+glPopMatrix();
+
+
+//kursi2
+glPushMatrix();
+glTranslatef(-50,5,-15); 
+glScalef(5, 5, 5);
+//glBindTexture(GL_TEXTURE_2D, texture[0]);
+kursi();
+glPopMatrix();
+
+//kursi3
+glPushMatrix();
+glTranslatef(-50,4,55); 
+glScalef(5, 5, 5);
+//glBindTexture(GL_TEXTURE_2D, texture[0]);
+kursi();
+glPopMatrix();
+
+//kursi4
+glPushMatrix();
+glTranslatef(10,4,55); 
+glScalef(5, 5, 5);
+//glBindTexture(GL_TEXTURE_2D, texture[0]);
+kursi();
+glPopMatrix();
 
 
 
