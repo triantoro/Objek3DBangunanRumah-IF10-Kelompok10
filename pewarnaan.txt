@@ -1,0 +1,24 @@
+warna lantai   
+
+glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(0.5, 0, 0);
+
+
+warna atap
+glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(0.5450980392156863, 0.2705882352941176, 0.0745098039215686);
+
+
+ glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3d(0.803921568627451, 0.5215686274509804, 0.2470588235294118);
+
+warna coklat
+glColor3f(0.2, 0, 0);
+
+kuning
+glColor3f(1, 0.5, 0);
+
+
+
+dinding abu muda
+glColor3f(0.4613, 0.4627, 0.4174);
