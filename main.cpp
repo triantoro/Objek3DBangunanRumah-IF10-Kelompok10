@@ -554,6 +554,154 @@ void rumah(void) {
     glutSolidCube(5.0);
     glPopMatrix();
      
+
+  //list hitam atas
+    glPushMatrix();
+    glScaled(0.35, 0.5, 0.035);
+   glTranslatef(1, 7.2,124); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(0.1412, 0.1389, 0.1356);
+    glutSolidCube(5.0);
+    glPopMatrix();
+
+  //list hitam atas
+    glPushMatrix();
+    glScaled(0.35, 0.43, 0.035);
+   glTranslatef(1, 3.5,124); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(0.1412, 0.1389, 0.1356);
+    glutSolidCube(5.0);
+    glPopMatrix();
+
+    //pintu atas
+    glPushMatrix();
+    glScaled(0.18, 0.35, 0.035);
+   glTranslatef(-8, 9.5,118); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(0.0980, 0.0608, 0.0077);
+    glutSolidCube(5.0);
+    glPopMatrix();   
+    
+  //pintu bawah
+    glPushMatrix();
+    glScaled(0.18, 0.35, 0.035);
+   glTranslatef(-8, 2.5,118); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glColor3f(0.0980, 0.0608, 0.0077);
+    glutSolidCube(5.0);
+    glPopMatrix();
+    
+   //alis
+    glPushMatrix();
+    glScaled(0.18, 0.017, 0.035);
+   glTranslatef(-8, 110.5,118); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+     glColor3f(0, 0, 0);
+    glutSolidCube(5.0);
+    glPopMatrix();
+    
+   //alis atas kiri
+    glPushMatrix();
+    glScaled(0.18, 0.017, 0.035);
+   glTranslatef(-8, 254,118); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+     //glColor3f(0.3402, 0.3412, 0.3117);
+     glColor3f(0, 0, 0);
+    glutSolidCube(5.0);
+    glPopMatrix();
+    
+   //alis atas kanan
+    glPushMatrix();
+    glScaled(0.10, 0.017, 0.035);
+   glTranslatef(18, 254,118); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+       glColor3f(0, 0, 0);
+    glutSolidCube(5.0);
+    glPopMatrix();    
+ 
+   //alis jedela atas
+    glPushMatrix();
+    glScaled(0.08, 0.017, 0.035);
+   glTranslatef(22.5, 245,118); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+     glColor3f(0.3402, 0.3412, 0.3117);
+    glutSolidCube(5.0);
+    glPopMatrix();      
+  
+    //alis jedela bawah
+    glPushMatrix();
+    glScaled(0.08, 0.017, 0.035);
+   glTranslatef(22.5, 165,118); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+     glColor3f(0.3402, 0.3412, 0.3117);
+    glutSolidCube(5.0);
+    glPopMatrix();     
+  
+    //alis jedela kiri
+    glPushMatrix();
+    glScaled(0.017,0.28, 0.035);
+   glTranslatef(96.6, 12.5,118); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+     glColor3f(0.3402, 0.3412, 0.3117);
+    glutSolidCube(5.0);
+    glPopMatrix();   
+   
+    //alis jedela kanan
+    glPushMatrix();
+    glScaled(0.017,0.28, 0.035);
+   glTranslatef(115.1, 12.5,118); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+     glColor3f(0.3402, 0.3412, 0.3117);
+    glutSolidCube(5.0);
+    glPopMatrix();
+    
+//jendela bawah (kanan Bawah)
+   //alis atas kanan (kanan Bawah)
+    glPushMatrix();
+    glScaled(0.10, 0.017, 0.035);
+   glTranslatef(18, 110.5,118); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+       glColor3f(0, 0, 0);
+    glutSolidCube(5.0);
+    glPopMatrix();  
+    
+//alis jedela atas (kanan Bawah)
+    glPushMatrix();
+    glScaled(0.08, 0.017, 0.035);
+   glTranslatef(22.5, 101.5,118); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+     glColor3f(0.3402, 0.3412, 0.3117);
+    glutSolidCube(5.0);
+    glPopMatrix();      
+  
+    //alis jedela bawah (kanan Bawah)
+    glPushMatrix();
+    glScaled(0.08, 0.017, 0.035);
+   glTranslatef(22.5, 22.0,118); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+     glColor3f(0.3402, 0.3412, 0.3117);
+    glutSolidCube(5.0);
+    glPopMatrix();     
+  
+    //alis jedela kiri (kanan Bawah)
+    glPushMatrix();
+    glScaled(0.017,0.28, 0.035);
+   glTranslatef(96.6, 3.8,118); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+     glColor3f(0.3402, 0.3412, 0.3117);
+    glutSolidCube(5.0);
+    glPopMatrix();   
+   
+    //alis jedela kanan (kanan Bawah)
+    glPushMatrix();
+    glScaled(0.017,0.28, 0.035);
+   glTranslatef(115.1, 3.8,118); 
+   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+     glColor3f(0.3402, 0.3412, 0.3117);
+    glutSolidCube(5.0);
+    glPopMatrix();        
+     
+     
 }
 
 void display(void){
