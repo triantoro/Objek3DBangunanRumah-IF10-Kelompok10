@@ -21,9 +21,9 @@ using namespace std;
 
 float lastx, lasty;
 GLint stencilBits;
-static int viewx = 0;
+static int viewx = -110;
 static int viewy = 40; 
-static int viewz =100;
+static int viewz =160;
 
 float rot = 0;
 
@@ -418,6 +418,10 @@ const GLfloat mat_diffuse[] = { 0.8f, 0.8f, 0.8f, 1.0f };
 const GLfloat mat_specular[] = { 1.0f, 1.0f, 1.0f, 1.0f };
 const GLfloat high_shininess[] = { 100.0f };
 
+
+
+
+
 void rumah(void) {
  
    //atap
@@ -536,6 +540,9 @@ void rumah(void) {
     glutSolidCube(5.0);
     glPopMatrix();
     
+    
+    
+
   //Dinding Depan bawah
     glPushMatrix();
     glScaled(1.015, 0.5, 0.035);
@@ -553,7 +560,6 @@ void rumah(void) {
     glColor3f(0.4613, 0.4627, 0.4174);  
     glutSolidCube(5.0);
     glPopMatrix();
-     
 
   //list hitam atas
     glPushMatrix();
@@ -699,9 +705,7 @@ void rumah(void) {
    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
      glColor3f(0.3402, 0.3412, 0.3117);
     glutSolidCube(5.0);
-    glPopMatrix();        
-     
- 
+    glPopMatrix();    
     
 //alis jedela atas (tengah1)
     glPushMatrix();
@@ -849,7 +853,6 @@ void rumah(void) {
     glutSolidCube(5.0);
     glPopMatrix(); 
 
-
     //pagar atas 1
     glPushMatrix();
     glScaled(.88, 0.017, 0.017);
@@ -877,7 +880,7 @@ void rumah(void) {
     glutSolidCube(5.0);
     glPopMatrix(); 
        
-  
+       
     //lampu kanan atas
     glPushMatrix();
     glScaled(0.05, 0.05, 0.05);
@@ -894,9 +897,7 @@ void rumah(void) {
     glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
     glColor3ub(252, 243, 169);
     glutSolidSphere(2.0,20,50);
-    glPopMatrix();        
-  
-
+    glPopMatrix();       
 
     //lampu kanan atas
     glPushMatrix();
@@ -987,10 +988,8 @@ void rumah(void) {
      glColor3f(1.0000, 0.5252, 0.0157);
     glutSolidCube(5.0);
     glPopMatrix();      
-        
-     
+      
 }
-
 void pohon(void){
 //batang
 GLUquadricObj *pObj;
@@ -1024,6 +1023,8 @@ glTranslatef(0,7,3);
 glutSolidDodecahedron();
 glPopMatrix();
 }
+
+
 
 void kursi(void){
     // Batang Tiang Kanan
@@ -1073,7 +1074,6 @@ void kursi(void){
     glPopMatrix();  
    
 }
-
 void markajalan(void) {
 
     // marka jalan
@@ -1085,7 +1085,8 @@ void markajalan(void) {
     glutSolidCube(5.0);
     glPopMatrix(); 
     
-}
+} 
+
 
 
 void awan(void){
@@ -1112,7 +1113,6 @@ glutSolidSphere(7, 50, 50);
 glPopMatrix();      
 }     
         
-
 
 
 void display(void){
@@ -1152,8 +1152,6 @@ void display(void){
 //	glBindTexture(GL_TEXTURE_2D, texture[0]);
 	drawSceneTanah(_terrainTanah, 0.7f, 0.2f, 0.1f);
 	glPopMatrix();
-
-
 
 //rumah 1
 glPushMatrix();
@@ -1210,9 +1208,6 @@ glScalef(5, 5, 5);
 //glBindTexture(GL_TEXTURE_2D, texture[0]);
 rumah();
 glPopMatrix();
-
-
-
 
 //pohon2
 glPushMatrix();
@@ -1412,6 +1407,7 @@ glPopMatrix();
 
 
 
+
 //kursi nyamping
 glPushMatrix();
 glTranslatef(8,5,-15); 
@@ -1453,7 +1449,6 @@ glScalef(5, 5, 5);
 //glBindTexture(GL_TEXTURE_2D, texture[0]);
 kursi();
 glPopMatrix();
-
 
 //markajalan
 glPushMatrix();
@@ -1558,6 +1553,10 @@ glScalef(3, 3, 3);
 //glBindTexture(GL_TEXTURE_2D, texture[0]);
 markajalan();
 glPopMatrix();
+
+
+
+
 
 //awan
 glPushMatrix();
@@ -1664,6 +1663,8 @@ awan();
 glPopMatrix();
 
 
+
+
     glColorMask(GL_FALSE, GL_FALSE, GL_FALSE, GL_FALSE); //disable the color mask
 	glDepthMask(GL_FALSE); //disable the depth mask
 
@@ -1737,8 +1738,8 @@ glEnable(GL_TEXTURE_GEN_T);
     initRendering();
         _terrainJalan = loadTerrain("heightmapJalan.bmp", 20);
         _terrainAir = loadTerrain("heightmapAir.bmp", 20);
-	    _terrain = loadTerrain("heightmap02.bmp", 20);
-	    _terrainTanah = loadTerrain("heightmapTanah.bmp", 20);
+	_terrain = loadTerrain("heightmap02.bmp", 20);
+	_terrainTanah = loadTerrain("heightmapTanah.bmp", 20);
         
 	//binding texture
 
@@ -1850,7 +1851,7 @@ glutInit(&argc, argv);
 glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_STENCIL | GLUT_DEPTH); //add a stencil buffer to the window
 glutInitWindowSize(800,600);
 glutInitWindowPosition(100,100);
-glutCreateWindow("Kelompok Rumah");
+glutCreateWindow("kelompok Rumah");
 init();
 glutDisplayFunc(display);
 glutIdleFunc(display);
